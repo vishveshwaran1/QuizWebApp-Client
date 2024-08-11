@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">QuizApp</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/CreateQuiz.html" class="nav-link">Create Quiz</a></li>
+                <li class="nav-item" id="signInLink">
+                    <a href="sign-up.html" class="nav-link">Sign In</a>
+                    <li id="username-display"></li>
+                 
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+            <div class="nav-user" id="navUser" style="display: none;"></div>
+        </nav>
+           <button id="logoutBtn" style=" float: right;">Logout</button> 
+</header>
+  
+
+
+    <section class="welcome-section" id="welcomeSection">
+        <h1>Welcome to the Ultimate Quiz App!</h1>
+        <p class="quote">"Challenge your mind, test your skills, and expand your knowledge."</p>
+        <div class="features">
+            <h2>Features of Our App:</h2>
+            <ul>
+                <li>Engaging quizzes across multiple topics</li>
+                <li>Real-time results and scoring</li>
+                <li>Create and share your own quizzes</li>
+                <li>Compete with friends and track your progress</li>
+            </ul>
+        </div>
+    </section>
+   
+    <main class="main-content">
+        <section class="quiz-list">
+            <h2>Available Quizzes</h2>
+            <div id="quizListContainer">
+               
+            </div>
+            <div id="quizCode" class="hidden"> 
+                <label for="quizCode">Enter Quiz Code:</label>
+                <input type="text" id="uniqueCodeInput" placeholder=" Quiz code" />
+                
+                <button id="fetchQuizButton">Join Quiz</button>
+            </div>
+        </section>
+
+        
+        <section class="quiz-taking" id="quizTakingSection" style="display: none;">
+            
+            <div id="timer"></div>
+            <div id="questionContainer"></div>
+            <div id="questionGridContainer" class="question-grid"></div>
+            <h2 id="quizTitle"></h2>
+            <div id="questionContainer" class="question-container"></div>
+            <div class="quiz-controls"></div>
+        </section>
+        
+
+        <section class="quiz-results" id="quizResultsSection" style="display: none;">
+            <!-- Quiz Page HTML -->
+
+
+            <h2>Quiz Results</h2>
+            <div id="resultContainer"></div> 
+        </section>
+
+
+       
+          
+
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+         
+          
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: Vichu2395@gmail.com</p>
+            <p>Phone: +91 9585517558</p>
+            <p>Address: Sri SaiRam institue of Technology</p>
+          </div>
+          
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="##">Privacy Policy</a></li>
+              <li><a href="##">Terms of Service</a></li>
+            </ul>
+          </div>
+          
+        
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="createQuiz.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">QuizApp</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item" id="signInLink"><a href="sign-up.html" class="nav-link">Sign In</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+        
+    </nav>
+</header>
+    <main class="main-content">
+        <h1>Create a New Quiz</h1>
+        <form id="createQuizForm">
+            <label for="quizTitle">Quiz Title:</label>
+            <input type="text" id="quizTitle" name="quizTitle" required>
+
+            <label for="quizTime">Time (in minutes):</label>
+            <input type="number" id="quizTime" name="quizTime" min="1" required>
+
+            <label for="uniqueCode">Generate Unique Code:</label>
+            <p type="text" id="uniqueCodeDisplay" name="uniqueCode" ></p>
+
+            <div id="questionsContainer">
+                <!-- Questions will be added here -->
+            </div>
+
+            <button type="button" id="addQuestionButton">Add Question</button>
+            <button type="submit">Save Quiz</button>
+        </form>
+    </main>
+
+    <script src="createQuiz.js">
+
+   
+
+    </script>
+</body>
+</html>
