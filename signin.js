@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch("https://vishveshwaran-quizwebapp-server.vercel.app/sign-in", {
                 method: "POST",
-                mode: "cors",
+                // mode: "cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, password })
             });
