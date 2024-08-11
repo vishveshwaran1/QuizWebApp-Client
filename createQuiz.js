@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       // uniCode=parseInt(uniCode);
       try {
-          const response = await fetch("https://vishveshwaran-quizwebapp-server.vercel.app//create-quiz", {
+          const response = await fetch("https://vishveshwaran-quizwebapp-server.vercel.app/create-quiz", {
               method: "POST",
               headers: {
                   "Content-Type": "application/json",
