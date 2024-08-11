@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (username) {
        quicodeBtn.classList.remove('hidden');
         try {
-            const response = await fetch(`http://localhost:5505/get-quizzes?username=${username}`);
+            const response = await fetch(`https://vishveshwaran-quizwebapp-server.vercel.app/get-quizzes?username=${username}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -57,7 +57,7 @@ fetchQuizButton.addEventListener("click", async () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:5505/get-quizzes/${uniqueCode}`);
+        const response = await fetch(`https://vishveshwaran-quizwebapp-server.vercel.app/get-quizzes/${uniqueCode}`);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -85,7 +85,7 @@ fetchQuizButton.addEventListener("click", async () => {
 /////
     window.startQuiz = async function (quizId) {
         try {
-            const response = await fetch(`http://localhost:5505/get-quiz/${quizId}`);
+            const response = await fetch(`https://vishveshwaran-quizwebapp-server.vercel.app/get-quiz/${quizId}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -220,7 +220,7 @@ fetchQuizButton.addEventListener("click", async () => {
     async function submitQuiz() {
         clearInterval(timerInterval); // Stop the timer
         try {
-            const response = await fetch(`http://localhost:5505/submit-quiz/${currentQuiz._id}`, {
+            const response = await fetch(`https://vishveshwaran-quizwebapp-server.vercel.app/submit-quiz/${currentQuiz._id}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

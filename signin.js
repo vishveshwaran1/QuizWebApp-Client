@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Login form submitted");
 
         try {
-            const response = await fetch("http://localhost:5505/sign-in", {
+            const response = await fetch("https://vishveshwaran-quizwebapp-server.vercel.app/sign-in", {
                 method: "POST",
                 mode: "cors",
                 headers: { "Content-Type": "application/json" },
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Sign-up form submitted");
 
         try {
-            const response = await fetch("http://localhost:5505/sign-up", {
+            const response = await fetch("https://vishveshwaran-quizwebapp-server.vercel.app/sign-up", {
                 method: "POST",
                 mode: "cors",
                 headers: { "Content-Type": "application/json" },
