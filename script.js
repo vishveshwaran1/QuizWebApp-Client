@@ -71,8 +71,7 @@ fetchQuizButton.addEventListener("click", async () => {
         startTimer();
         displayQuestion();
         displayQuestionGrid();
-        
-        // Ensure quizTakingSection is visible and other sections are hidden
+
         quizTakingSection.style.display = "block";
         quizListContainer.style.display = "none";
         quizResultsSection.style.display = "none";
@@ -284,9 +283,7 @@ fetchQuizButton.addEventListener("click", async () => {
         localStorage.removeItem('username');
         // localStorage.removeItem('attemptedQuizzes');
         // localStorage.removeItem('resultData');
-        
-        // Redirect to login or home page
-        window.location.href = 'index.html'; // Adjust the path as needed
+        window.location.href = 'index.html'; 
     });
     
 
