@@ -273,8 +273,12 @@ fetchQuizButton.addEventListener("click", async () => {
     const signInLink = document.getElementById("signInLink");
     if (username) {
         signInLink.classList.add('hidden');
+        document.getElementById('logoutBtn').classList.remove('hidden');
         const userNameDisplay = document.getElementById("username-display");
         userNameDisplay.textContent = username;
+    }
+     else{
+        document.getElementById('logoutBtn').classList.add('hidden');
     }
 
 
